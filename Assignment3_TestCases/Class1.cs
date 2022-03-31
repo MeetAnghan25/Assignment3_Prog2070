@@ -204,6 +204,7 @@ public class DefaultSuiteTest
         driver.FindElement(By.Id("year")).Click();
         driver.FindElement(By.Id("year")).SendKeys("2017");
         driver.FindElement(By.CssSelector(".btn")).Click();
+        //Assert
         Assert.That(driver.FindElement(By.Id("phone")).Text, Is.EqualTo("* Correct Format For Phone: XXX-XXX-XXXX or (XXX)XXX-XXXX"));
     }
     [Test]
